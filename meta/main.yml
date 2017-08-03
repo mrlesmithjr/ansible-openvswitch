@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Larry Smith Jr.
+  description: An [Ansible](https://www.ansible.com) role to install/configure [Open vSwitch](http://openvswitch.org/)
+
+  license: license (MIT)
+
+  min_ansible_version: 2.3
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+
+  galaxy_tags:
+    - networking
+
+dependencies: []
