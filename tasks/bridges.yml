@@ -1,4 +1,5 @@
 ---
+
 - name: bridges | Managing OVS Bridges
   openvswitch_bridge:
     bridge: "{{ item['bridge'] }}"
@@ -9,3 +10,5 @@
   become: true
   with_items: '{{ openvswitch_bridges }}'
   when: openvswitch_bridges is defined
+
+# vim: set ts=2 sw=2:

@@ -1,6 +1,10 @@
+---
+
 galaxy_info:
   author: Larry Smith Jr.
-  description: An [Ansible](https://www.ansible.com) role to install/configure [Open vSwitch](http://openvswitch.org/)
+  description: >
+    An [Ansible](https://www.ansible.com) role to install/configure
+    [Open vSwitch](http://openvswitch.org/)
 
   license: license (MIT)
 
@@ -23,3 +27,5 @@ galaxy_info:
     - networking
 
 dependencies: []
+
+# vim: set ts=2 sw=2:
