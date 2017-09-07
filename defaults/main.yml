@@ -5,10 +5,6 @@ openvswitch_bridges: []
   # - bridge: 'br-int'
   #   state: 'present'
 
-openvswitch_debian_packages:
-  - 'openvswitch-switch'
-  - 'openvswitch-common'
-
 openvswitch_ports: []
   # - bridge: 'br-int'
   #   ports:

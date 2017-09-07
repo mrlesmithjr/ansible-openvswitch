@@ -1,4 +1,8 @@
 ---
 # vars file for ansible-openvswitch
 
+openvswitch_packages: []
+
+openvswitch_services: []
+
 # vim: set ts=2 sw=2:

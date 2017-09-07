@@ -1,7 +1,10 @@
 ---
-- name: service | Ensuring OVS Service Is Started And Enabled On Boot
+
+- name: service | Ensuring OVS Services Are Started And Enabled On Boot
   service:
-    name: "openvswitch-switch"
+    name: "{{ item }}"
     state: "started"
     enabled: true
-  become: true
+  with_items: "{{ openvswitch_services }}"
+
+# vim: set ts=2 sw=2:

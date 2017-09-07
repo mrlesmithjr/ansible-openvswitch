@@ -4,12 +4,20 @@ galaxy_info:
 
   license: license (MIT)
 
-  min_ansible_version: 2.3
+  min_ansible_version: 2.2
 
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
+        - all
+    - name: Debian
+      versions:
+        - jessie
+    - name: Fedora
+      versions:
+        - 25
+        - 26
+    - name: Archlinux
 
   galaxy_tags:
     - networking

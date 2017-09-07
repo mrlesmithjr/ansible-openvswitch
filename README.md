@@ -33,10 +33,6 @@ openvswitch_bridges: []
   # - bridge: 'br-int'
   #   state: 'present'
 
-openvswitch_debian_packages:
-  - 'openvswitch-switch'
-  - 'openvswitch-common'
-
 openvswitch_ports: []
   # - bridge: 'br-int'
   #   ports:
@@ -49,6 +45,18 @@ openvswitch_system_tuning: []
   # - name: 'net.ipv4.ip_forward'
   #   value: 1
 ```
+
+```yaml
+---
+# overriden variables, predefined by platform in `vars/`
+
+# packages to install
+openvswitch_packages: []
+
+# services to enable and start
+openvswitch_services: []
+```
+
 
 ## Dependencies
 
