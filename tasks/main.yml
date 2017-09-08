@@ -1,7 +1,9 @@
 ---
 # tasks file for ansible-openvswitch
-- include: debian.yml
-  when: ansible_os_family == "Debian"
+
+- include: dist_vars.yml
+
+- include: install.yml
 
 - include: service.yml
 
@@ -10,3 +12,5 @@
 - include: bridges.yml
 
 - include: ports.yml
+
+# vim: set ts=2 sw=2:

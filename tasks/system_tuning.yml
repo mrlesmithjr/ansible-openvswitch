@@ -1,4 +1,5 @@
 ---
+
 - name: system_tuning | Managing sysctl
   sysctl:
     name: "{{ item['name'] }}"
@@ -7,3 +8,5 @@
   become: true
   with_items: '{{ openvswitch_system_tuning }}'
   when: openvswitch_system_tuning is defined
+
+# vim: set ts=2 sw=2:

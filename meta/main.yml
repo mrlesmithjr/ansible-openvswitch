@@ -1,17 +1,31 @@
+---
+
 galaxy_info:
   author: Larry Smith Jr.
-  description: An [Ansible](https://www.ansible.com) role to install/configure [Open vSwitch](http://openvswitch.org/)
+  description: >
+    An [Ansible](https://www.ansible.com) role to install/configure
+    [Open vSwitch](http://openvswitch.org/)
 
   license: license (MIT)
 
-  min_ansible_version: 2.3
+  min_ansible_version: 2.2
 
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
+        - all
+    - name: Debian
+      versions:
+        - jessie
+    - name: Fedora
+      versions:
+        - 25
+        - 26
+    - name: Archlinux
 
   galaxy_tags:
     - networking
 
 dependencies: []
+
+# vim: set ts=2 sw=2:
