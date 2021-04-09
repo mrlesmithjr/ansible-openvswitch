@@ -3,6 +3,7 @@
   openvswitch_bridge:
     bridge: "{{ item['bridge'] }}"
     parent: "{{ item['parent']|default(omit) }}"
+    fail_mode: "{{ item['fail_mode']|default('standalone') }}"
     state: "{{ item['state'] }}"
     timeout: "{{ item['timeout']|default(omit) }}"
     vlan: "{{ item['vlan']|default(omit) }}"

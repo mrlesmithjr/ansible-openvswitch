@@ -1,7 +1,6 @@
 ---
 - name: debian | Installing OVS Packages
   apt:
-    name: "{{ item }}"
+    name: "{{ openvswitch_debian_packages }}"
     state: "present"
   become: true
-  with_items: '{{ openvswitch_debian_packages }}'
