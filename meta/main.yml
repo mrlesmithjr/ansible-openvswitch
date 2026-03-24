@@ -4,14 +4,17 @@ galaxy_info:
 
   license: license (MIT)
 
-  min_ansible_version: 2.3
+  min_ansible_version: 2.10
 
   platforms:
     - name: Ubuntu
       versions:
-        - xenial
+        - focal
 
   galaxy_tags:
     - networking
 
 dependencies: []
+
+collections:
+  - openvswitch.openvswitch

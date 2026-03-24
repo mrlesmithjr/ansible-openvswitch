@@ -1,7 +1,10 @@
 ---
 - name: service | Ensuring OVS Service Is Started And Enabled On Boot
-  service:
+  ansible.builtin.service:
     name: "openvswitch-switch"
     state: "started"
     enabled: true
   become: true
+  when: >
+    "openvswitch-switch.service" in ansible_facts.services or
+    "openvswitch-switch" in ansible_facts.services

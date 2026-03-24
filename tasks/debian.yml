@@ -1,6 +1,6 @@
 ---
 - name: debian | Installing OVS Packages
-  apt:
+  ansible.builtin.apt:
     name: "{{ openvswitch_debian_packages }}"
     state: "present"
   become: true
